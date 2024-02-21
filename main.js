@@ -93,7 +93,7 @@ const sr = ScrollReveal({
     // reset: true 
 });
 
-sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container, .section__title, .paragraph, .gallery__desc`)
+sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container, .section__title, .paragraph, .gallery__desc, .popular__title`)
 sr.reveal(`.home__card, .demo-svg,  .carousel`,{delay: 300, distance: '100px', interval: 100})
 sr.reveal(`.about__data, .contact-left`,{origin: 'right'})
 sr.reveal(`.about__image, .contact-right`,{origin: 'left'})
