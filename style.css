@@ -191,6 +191,16 @@ img {
   position: relative;
 }
 
+.popular__title{
+  text-align: center;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+  
+
 .main {
   width: 100%;
   overflow: hidden; /* For animation ScrollReveal */
@@ -1055,14 +1065,14 @@ form textarea{
 
 
   .popular__title{
-    font-size: .8rem;
+    font-size: 1.1rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     line-height: 1.3rem;
   }
 
   .gallery__desc{
-    font-size: .7rem;
+    font-size: .8rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
   }
