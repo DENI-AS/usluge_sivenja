@@ -1028,7 +1028,7 @@ form textarea{
   }
 
   .home__cards .home__card .home__card-content p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .home__card {  
@@ -1048,17 +1048,18 @@ form textarea{
     font-size: 1.2rem;
   }
 
-  
+
   .popular__title{
-    font-size: 1.3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    line-height: 1.8rem;
   }
 
   .gallery__desc{
-    font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    font-size: .9rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
   }
 
   
@@ -1251,7 +1252,7 @@ form textarea{
   }
 
   .home__cards .home__card .home__card-content p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .home__card {  
