@@ -94,7 +94,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container, .section__title, .paragraph, .gallery__desc`)
-sr.reveal(`.home__card, .demo-svg,  .carousel`,{delay: 500, distance: '100px', interval: 100})
+sr.reveal(`.home__card, .demo-svg,  .carousel`,{delay: 300, distance: '100px', interval: 100})
 sr.reveal(`.about__data, .contact-left`,{origin: 'right'})
 sr.reveal(`.about__image, .contact-right`,{origin: 'left'})
 sr.reveal(`.popular__card, .counters`,{interval: 200})
