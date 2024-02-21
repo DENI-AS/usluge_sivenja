@@ -603,6 +603,11 @@ svg{
 }
 
 /*------------------ RADOVI -----------------*/
+
+.popular__title{
+  font-size: 1.5rem;
+}
+
 .work{
   height: 850px;
   width: 100%;
@@ -1050,10 +1055,10 @@ form textarea{
 
 
   .popular__title{
-    font-size: 1rem;
+    font-size: .8rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
 
   .gallery__desc{
@@ -1519,14 +1524,6 @@ form textarea{
     grid-template-columns: repeat(3, 300px);
     column-gap: 3rem;
     padding-top: 4rem;
-  }
-
-  .popular__title{
-    font-size: var(--h2-font-size);
-  }
-  
-  .popular__location{
-    font-size: var(--normal-font-size);
   }
 
   .explore__img{
