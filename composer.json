@@ -1,0 +1,6 @@
+{
+    "name": "necap/htdocs",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
