@@ -200,6 +200,16 @@ margin-bottom: 20px;
 position: relative;
 }
 
+.popular__title{
+  text-align: center;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+  
+
 .main {
 width: 100%;
 overflow: hidden; /* For animation ScrollReveal */
@@ -1032,7 +1042,6 @@ padding-left: 10px;
 padding-right: 10px;
 margin-top: 30px;
 }
-
 .home__cards {
 grid-template-columns: repeat(1, 1fr);
 margin-top: 10px;
@@ -1164,9 +1173,6 @@ flex-direction: column;
 
 /* For medium devices*/
 @media screen and (max-width: 768px) {
-.button {
-font-size: 0.8rem;
-}
 
 .button {
 font-size: 0.8rem;
@@ -1434,6 +1440,7 @@ column-gap: 4.5rem;
 }
 
 @media screen and (min-width: 1130px) {
+
 .container {
 margin-inline: auto;
 }
