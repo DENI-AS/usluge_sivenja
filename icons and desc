@@ -33,7 +33,7 @@
     </title>
     <meta
       name="description"
-      content="Nudimo visokokvalitetne usluge sivenja i krojenja po pristupačnim cenama. Kontaktirajte nas za svaku uslugu sivenja koja Vas zanima."
+      content="Izdvajamo se po visokokvalitetnim uslugama sivenja i krojenja po pristupačnim cenama. Naš tim stručnjaka sa pažnjom prema detaljima pruža vrhunsko usluzno sivenje, prilagođeno vašim potrebama i stilu. Kontaktirajte nas danas kako biste saznali više o našim uslugama sivenja i stvorili savršene komade koji odražavaju vašu jedinstvenu viziju."
     />
     <meta
       name="keywords"
@@ -47,9 +47,11 @@
     <link rel="canonical" href="https://deni-as.com/" />
     
     <link rel="apple-touch-icon" sizes="180x180" href="Images/Usluzno sivenje.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/usluge sivenja 32x32.png"  />
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/usluge sivenja 32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="Images/usluge sivenja 16x16.png"/>
-  
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/usluge sivenja 192x192.png"/>
+    <link rel="icon" type="image/png" sizes="512x512" href="Images/usluge sivenja 512x512.png"/>
+    
     <!--
       <link rel="manifest" href="Images/site.webmanifest" /> 
     -->  
@@ -75,7 +77,7 @@
               <a href="#services" class="nav__link" title="Usluge sivenja">Usluge</a>
             </li>
             <li class="nav__item">
-              <a href="#popular" class="nav__link" title="Proizvodi" >Galerija</a>
+              <a href="#popular" class="nav__link" title="Proizvodi">Proizvodi</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link" title="Kontakt" >Kontakt</a>
@@ -188,7 +190,7 @@
       <section class="services" id="services">
         <div class="srv">
           <div class="service-section" id="usluge">
-            <a href="#services"><h2 class="section__title">Usluge</h2></a>
+            <a href="#services"><h2 class="section__title">Usluge šivenja</h2></a>
             <p class="paragraph">
               Dopustite nam da vam predstavimo naš svet tekstilnih rešenja, gde
               se udobnost susreće sa stilom, a svaki šav govori priču o
@@ -196,6 +198,18 @@
             </p>
 
             <div class="home__cards">
+              
+              <div class="home__card">
+                <i class="fa-regular fa-gem"></i>
+                <div class="home__card-content">
+                  <h3><br />Tekstilne dekoracije za Vaš dom</h3>
+                  <p class="services__desc">
+                    Proizvodnja tekstilnih proizvoda kao što su posteljine, stoličnjaci, jastuci, pokrivači za baštenske
+                    garniture, itd.
+                  </p>
+                </div>
+              </div>
+              
               <div class="home__card">
                 <i class="gameicon-sewing-machine"></i>
                 <div class="home__card-content">
@@ -207,22 +221,11 @@
                 </div>
               </div>
 
-              <div class="home__card">
-                <i class="fa-regular fa-gem"></i>
-                <div class="home__card-content">
-                  <h3><br />Tekstilne dekoracije za Vaš dom</h3>
-                  <p class="services__desc">
-                    Proizvodnja tekstilnih proizvoda kao što su posteljine po
-                    meri, stoličnjaci, jastuci, pokrivači za baštenske
-                    garniture, itd.
-                  </p>
-                </div>
-              </div>
 
               <div class="home__card">
                 <i class="fa-solid fa-rocket"></i>
                 <div class="home__card-content">
-                  <h3><br/>Usluge šivenja</h3>
+                  <h3><br/>Šivenje po meri</h3>
                   <p class="services__desc">
                     Za sve vaše probleme nudimo prilagođena tekstilna rešenja sa 
                     pažnjom na svakom koraku proizvodnje.
@@ -241,7 +244,7 @@
 
       <!--==================== POPULAR ====================-->
       <section class="work section" id="popular">
-        <a href="#popular"><h2 class="popular__title">Pronađite inspiraciju u našoj kolekciji najtraženijih radova</h2></a>
+        <a href="#popular"><h2 class="popular__title">Pronađite inspiraciju u našoj kolekciji najtraženijih proizvoda</h2></a>
         <p class="gallery__desc">Garantujemo vrhunski kvalitet naših proizvoda</p>
         <div class="carousel">
           <ul>
@@ -396,7 +399,7 @@
                 required
               ></textarea>
               <button type="submit" id="submit" class="button submit">
-                Posalji poruku
+                Pošalji poruku
               </button>
             </form>
           </div>
