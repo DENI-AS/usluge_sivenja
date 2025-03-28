@@ -9,17 +9,6 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <script>
-      if (document.referrer !== "" && window.location.href === "deni-as.com") {
-          sessionStorage.setItem('previousPage', document.referrer);
-      }
-      
-      window.onpopstate = function(event) {
-          if (sessionStorage.getItem('previousPage')) {
-              window.location.href = sessionStorage.getItem('previousPage');
-          }
-      };
-  </script>
     
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="jquery.flipster.min.css" />
@@ -50,14 +39,14 @@
     
     <link rel="canonical" href="Images/usluge sivenja 32x32.png">
     
-      <link rel="manifest" href="Images/site.webmanifest" /> 
-    
+    <link rel="manifest" href="Images/site.webmanifest" /> 
+     
   </head>
   <body>
     <header class="header" id="header">
       <nav class="nav container">
 
-        <a href="https://deni-as.com/" class="nav__logo" lang="en" translate="no"> DENI-AS</a>
+        <a href="https://deni-as.com/" class="nav__logo"><img src="DENI-AS.svg"></a>
 
         <div class="nav__menu" id="nav-menu">
 
@@ -66,16 +55,16 @@
               <a href="https://deni-as.com/#home" class="nav__link active-link">Početna</a>
             </li>
             <li class="nav__item">
-              <a href="https://deni-as.com/#about" class="nav__link" title="O nama">O nama</a>
+              <a href="o-nama.html" class="nav__link" title="O nama">O nama</a>
             </li>
             <li class="nav__item">
-              <a href="https://deni-as.com/#services" class="nav__link" title="Usluge sivenja">Usluge</a>
+              <a href="cenovnik.html" class="nav__link" title="Cenovnik">Cenovnik</a>
             </li>
             <li class="nav__item">
-              <a href="https://deni-as.com/#popular" class="nav__link" title="Proizvodi">Proizvodi</a>
+              <a href="proizvodi.html" class="nav__link" title="Proizvodi">Proizvodi</a>
             </li>
             <li class="nav__item">
-              <a href="https://deni-as.com/#contact" class="nav__link" title="Kontakt" >Kontakt</a>
+              <a href="contact.html" class="nav__link" title="Kontakt">Kontakt</a>
             </li>
           </ul>
 
@@ -115,8 +104,8 @@
               <br/><br/>
             </h1>
 
-            <a href="https://deni-as.com/#contact" class="button home__btn">
-              KONTAKTIRAJ NAS ODMAH <i class="ri-arrow-right-line"></i>
+            <a href="#contact" class="button home__btn">
+              KONTAKTIRAJTE NAS ODMAH <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
@@ -126,32 +115,138 @@
         <div class="about__container container grid">
           <div class="about__data">
 
-            <a href="https://deni-as.com/#img"><h2 class="section__title">Naša priča</h2></a>
+            <h2 class="section__title">Ko smo mi?</h2>
 
             <p class="about__description">
               <br />
-              DENI-AS ima skromne početke koji su proizašli iz strasti prema
-              tekstilu i želje da stvorimo nešto posebno. Osnovani smo 2001.
-              godine, a prve korake napravili smo sa vizijom pružanja
-              jedinstvenih tekstilnih proizvoda koji će obogatiti život svakog
-              klijenta. <br /><br />
-
-              Naša priča nije samo o stvaranju proizvoda, već i o stvaranju
-              partnerstva sa kreativnim pojedincima, dizajnerima i
-              preduzetnicima koji žele da svoje ideje pretvore u stvarnost. Ali
-              takođe aktivno tražimo partnere koji prodaju svoje unikatne
-              tekstilne proizvode, nudeći im usluge prilagođenog dizajna i
-              uslužnog šivenja. Želimo biti Vaši saveznici u stvaranju
-              izuzetnih, personalizovanih komada koji će očarati Vaše klijente.
-              <br /><br />
-
-              Kroz godine rada, izgradili smo reputaciju kao pouzdanog partnera
-              koji ne samo da prati najnovije trendove u tekstilnoj industriji,
-              već i aktivno učestvuje u stvaranju novih. Verujemo da saradnja
-              nije samo poslovni odnos, već prilika za deljenje ideja,
-              inspiracije i zajedničkog rasta. <br /><br />
+              DENI-AS je firma posvećena vrhunskom uslužnom šivenju širokog spektra tekstilnih proizvoda – osim odevnih. Sa tradicijom dugom skoro dve decenije, specijalizovali smo se za preciznu i kvalitetnu izradu po meri, prilagođavajući se jedinstvenim potrebama naših klijenata.
+              <br><br>
+              Bilo da Vam je potreban prilagođeni dizajn, serijska proizvodnja ili unikatni tekstilni proizvodi, naš tim pruža pouzdanu podršku u svakom koraku. <br><br><br>
             </p>
+            
+            <a href="o-nama.html" class="button home__btn">
+              Naša priča <i class="ri-arrow-right-line"></i>
+            </a>
 
+          </div>
+
+          <div class="home__image_1" id="img">
+            <img src="Images/home1.jpg" alt="usluzno sivenje cenovnik" class="home__img" />
+            <div class="home__shadow_1"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        
+        <div class="benefits__shadow1"></div>
+        <div class="benefits__shadow2"></div>
+        <svg id="demo-svg" width="2000" height="750" z-index="-100">
+          <path
+    fill="none"
+    stroke="black"
+    stroke-width="3"
+    d="M 50 629 
+       C 350 470, 1050 870, 1450 610 
+       S 1850 370, 2250 570 
+       S 2650 870, 3050 470"
+  ></path>
+        </svg>
+        <div class="benefits container">
+          <h2 class="section__title">Zašto izabrati nas?</h2>
+          <div class="benefits__grid">
+              <div class="benefit">
+                  <img src="Images/energy.png" alt="Kvalitetna izrada">
+                  <p>Pružamo visokokvalitetnu i preciznu izradu po meri vaših potreba.</p>
+              </div>
+              <div class="benefit">
+                  <img src="Images/shield.png" alt="Najkvalitetniji materijali">
+                  <p>Koristimo najkvalitetnije prirodne materijale i moderne tehnike izrade.</p>
+              </div>
+              <div class="benefit">
+                  <img src="Images/discover.png" alt="Fleksibilnost">
+                  <p>Fleksibilni smo u prilagođavanju različitim projektima i količinama.</p>
+              </div>
+              <div class="benefit">
+                  <img src="Images/schedule.png" alt="Iskustvo">
+                  <p>Više od 15 godina iskustva garantuje pouzdanost i profesionalizam.</p>
+              </div>
+          </div>
+
+        </div>
+        
+    </section>
+
+
+<!--
+<section class="about section benefits-section">
+        <div class="benefits__shadow1"></div>
+        <div class="benefits__shadow2"></div>
+        <div>
+          <div class="about__container container grid">
+              <div class="home__image_2" id="img2">
+                <img src="Images/Usluge sivenja.jpg" alt="usluzno sivenje cenovnik" class="home__img_2" />
+                <div class="about__shadow"></div>
+              </div>
+              
+            <div class="about_description">
+              
+              <h2 class="section__title">Zašto izabrati nas?</h2>
+
+              <ul class="benefits">
+              <li class="benefit">Pružamo visokokvalitetnu i preciznu izradu po meri vaših potreba.</li><br>
+              <li class="benefit">Koristimo najkvalitetnije prirodne materijale i moderne tehnike izrade.</li><br>
+              <li class="benefit">Fleksibilni smo u prilagođavanju različitim projektima i količinama.</li><br>
+              <li class="benefit">Više od 15 godina iskustva garantuje pouzdanost i profesionalizam.</li><br>
+          </ul>
+          
+            </div>
+          </div>
+        </div>
+        
+      </section>
+-->
+      
+
+      <section class="testimonial-section">
+        <h2 class="section__title">Rekli su o nama</h2>
+        
+        <div class="testimonial-wrapper">
+            <div class="testimonial-container">
+                <div class="comments">
+                    <div class="testimonial-header">
+                        <img id="profile-img" class="profile-img" src="Images/Danijela.jpg" alt="Korisnik">
+                        <span id="testimonial-author" class="testimonial-author"></span>
+                    </div>
+                    <p id="testimonial-text" class="testimonial-text">
+                    </p>
+                    <div class="arrows">
+                        <button class="arrow-btn" onclick="prevTestimonial()">&#9665;</button>
+                        <button class="arrow-btn" onclick="nextTestimonial()">&#9655;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-form">
+                <h3 class="form-title">Podelite svoje iskustvo i mišljenje</h3>
+                <form class="form2" id="commentForm" action="https://formspree.io/f/xleykaro" method="post">
+                    <input type="text" id="Name1" class="Name1" name="name" placeholder="Vaše ime" required autocomplete="off"/>
+                    <input type="email" id="email1" class="email1" name="email" placeholder="Vaš e-mail" required autocomplete="off"/>
+                    <textarea name="message" id="message1" placeholder="Vaša poruka" required></textarea>
+                    <button type="submit" id="submit" class="button">Pošalji</button>
+                </form>
+                <div id="successMessage" style="display: none; color: #ffac3d; margin-top: 10px;">
+                  Uspešno ste poslali komentar na pregledanje!
+                </div>
+            </div>
+        </div>
+      </section>
+
+      
+
+      <!--==================== SERVICES ====================-->
+      <!--
+      
             <div class="about__counter" id="brojac">
               <div class="container" id="counting">
                 <div class="counters">
@@ -162,79 +257,17 @@
                   </div>
 
                   <div class="counter project">
-                    <h2 class="number2" data-target="20">0</h2>
+                    <h2 class="number2" data-target="10">0</h2>
                     <p class="plus">+</p>
                     <p class="detail">Godina iskustva</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+      
+      
+      
 
-          <div class="about__image" id="img">
-            <img src="Images/Usluge sivenja.jpg" alt="usluzno sivenje cenovnik" class="about__img" />
-            <div class="about__shadow"></div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== SERVICES ====================-->
-      <section class="services" id="services">
-        <div class="srv">
-          <div class="service-section" id="usluge">
-            <a href="https://deni-as.com/#services"><h2 class="section__title">Usluge šivenja</h2></a>
-            <p class="paragraph">
-              Dopustite nam da vam predstavimo naš svet tekstilnih rešenja, gde
-              se udobnost susreće sa stilom, a svaki šav govori priču o
-              pažljivom dizajnu.
-            </p>
-
-            <div class="home__cards">
-              
-              <div class="home__card">
-                <i class="fa-regular fa-gem"></i>
-                <div class="home__card-content">
-                  <h3><br />Tekstilne dekoracije za Vaš dom</h3>
-                  <p class="services__desc">
-                    Proizvodnja tekstilnih proizvoda kao što su posteljine, stoličnjaci, jastuci, pokrivači za baštenske
-                    garniture, itd.
-                  </p>
-                </div>
-              </div>
-              
-              <div class="home__card">
-                <i class="gameicon-sewing-machine"></i>
-                <div class="home__card-content">
-                  <h3><br />Uslužno šivenje za poslovne klijente</h3>
-                  <p class="services__desc">
-                    Proizvodnja i prepravka tekstila za druge brendove s
-                    vrhunskim kvalitetom i preciznošću.
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="home__card">
-                <i class="fa-solid fa-rocket"></i>
-                <div class="home__card-content">
-                  <h3><br/>Šivenje po meri</h3>
-                  <p class="services__desc">
-                    Za sve vaše probleme nudimo prilagođena tekstilna rešenja sa 
-                    pažnjom na svakom koraku proizvodnje.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h1 style="display: none;"> Usluzno sivenje cenovnik</h1>
-
-          <a href="https://deni-as.com/#contact" class="button home__btn" id="btn"
-            >Zakaži BESPLATNE konsultacije <i class="ri-arrow-right-line"></i
-          ></a>
-        </div>
-      </section>
-
-      <!--==================== POPULAR ====================-->
       <section class="work section" id="popular">
         <a href="https://deni-as.com/#popular"><h2 class="popular__title">Pronađite inspiraciju u našoj kolekciji najtraženijih proizvoda</h2></a>
         <p class="gallery__desc">Garantujemo vrhunski kvalitet naših proizvoda</p>
@@ -321,82 +354,11 @@
         </div>
       </section>
 
+
+-->
+      
       <!--==================== CONTACT ====================-->
-      <section class="explore" id="contact">
-        <div class="about__container container grid contact__container">
-          <div class="contact-left">
-            <h2 class="contact__title">Kontaktirajte nas</h2>
-
-            <p class="info">
-              <br /><br />
-              Ostvarite direktan kontakt s nama putem forme ili poziva na jedan
-              od ponuđenih brojeva telefona. <br />
-              <br />
-              Vaša povratna informacija nam je od izuzetne važnosti, a mi ćemo se
-              potruditi da odgovorimo u najkraćem mogućem roku. Hvala Vam na
-              ukazanom poverenju!
-            </p>
-
-            <div class="cnt__info">
-              <div class="contact__br">
-                <h4 class="contact__info">Kontakt telefoni</h4>
-                <p>(+381) 60 317 11 00</p>
-                <p>(+381) 65 317 11 12</p>
-              </div>
-
-              <div class="contact__adr">
-                <p class="email">
-                  
-                  <span lang="en" translate="no"> <a href="mailto:denias010@gmail.com" class="email__adress">denias010@gmail.com</a></span><br>
-                  <span>18300 Pirot, Srbija</span>  
-                </p>
-              </div>
-
-            </div>
-          
-          </div>
-
-          <div class="about__image contact-right">
-            <form
-              class="form1"
-              action="https://formspree.io/f/xleykaro"
-              method="post"
-            >
-              <input
-                type="text"
-                id="Name"
-                name="name"
-                placeholder="Vaše ime"
-                required
-              />
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Vaš e-mail"
-              />
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Broj telefona"
-                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                required
-              />
-              <textarea
-                name="message"
-                id="message"
-                rows="9"
-                placeholder="Vaša poruka"
-                required
-              ></textarea>
-              <button type="submit" id="submit" class="button submit">
-                Pošalji poruku
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -457,6 +419,26 @@
                 </li>
               </ul>
             </div>
+            
+            <div>
+              <h3 class="footer__title">Prices</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="https://deni-as.com/#services" class="footer__link">Best Prices</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="footer__title">Products</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="https://deni-as.com/#services" class="footer__link">Our Products</a>
+                </li>
+              </ul>
+            </div>
 
             <div>
               <h3 class="footer__title">Contact</h3>
@@ -485,7 +467,7 @@
 
         <div class="footer__group">
           <span class="footer__copy" lang="en" translate="no">
-            &#169; 2024 DENI-AS. All rights reserved.
+            &#169; 2025 DENI-AS. All rights reserved.
           </span>
         </div>
       </div>
@@ -496,8 +478,78 @@
     <div id="progress">
       <span id="progress-value"><i class="ri-arrow-up-s-line"></i></span>
     </div>
-
     
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js" defer></script>
+
+    <script>
+      if (document.referrer !== "" && window.location.href === "deni-as.com") {
+          sessionStorage.setItem('previousPage', document.referrer);
+      }
+      
+      window.onpopstate = function(event) {
+          if (sessionStorage.getItem('previousPage')) {
+              window.location.href = sessionStorage.getItem('previousPage');
+          }
+      };
+      
+      const testimonials = [
+    {
+        img: "Images/Danijela.jpg",
+        text: "\"Odlična usluga i kvalitetna izrada! Preporučujem svima!\"",
+        author: "Danijela Jeftić"
+    },
+    {
+        img: "Images/Jelena.jpg",
+        text: "\"Brza i profesionalna usluga, sigurno ćemo ponovo sarađivati!\"",
+        author: "Jelena Nikolić"
+    },
+    {
+        img: "Images/Marija.jpg",
+        text: "\"Fantastičan tim i besprekoran kvalitet!\"",
+        author: "Marija Lazarević"
+    },
+    {
+        img: "Images/Dalibor.jpg",
+        text: "\"Fantastičan tim i besprekoran kvalitet!\"",
+        author: "Dalibor Jovanović"
+    }
+];
+
+let currentIndex = 0;
+
+function updateTestimonial() {
+    document.getElementById("profile-img").src = testimonials[currentIndex].img;
+    document.getElementById("testimonial-text").textContent = testimonials[currentIndex].text;
+    document.getElementById("testimonial-author").textContent = testimonials[currentIndex].author;
+}
+
+function prevTestimonial() {
+    currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+    updateTestimonial();
+}
+
+function nextTestimonial() {
+    currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+    updateTestimonial();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    updateTestimonial();
+});
+
+document.getElementById("commentForm").addEventListener("submit", function (event) {
+event.preventDefault();     
+let message = document.getElementById("successMessage");
+    message.style.display = "block"; 
+
+    setTimeout(function () {
+      location.reload();
+    }, 5000);
+
+});
+
+  </script>
 
     <script src="anime.min.js"></script>
     <script>
@@ -529,7 +581,5 @@
       });
     </script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="main.js"></script>
   </body>
 </html>
