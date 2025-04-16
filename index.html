@@ -483,71 +483,7 @@
     <script src="main.js" defer></script>
 
     <script>
-      if (document.referrer !== "" && window.location.href === "deni-as.com") {
-          sessionStorage.setItem('previousPage', document.referrer);
-      }
       
-      window.onpopstate = function(event) {
-          if (sessionStorage.getItem('previousPage')) {
-              window.location.href = sessionStorage.getItem('previousPage');
-          }
-      };
-      
-      const testimonials = [
-    {
-        img: "Images/Danijela.jpg",
-        text: "\"Odlična usluga i kvalitetna izrada! Preporučujem svima!\"",
-        author: "Danijela Jeftić"
-    },
-    {
-        img: "Images/Jelena.jpg",
-        text: "\"Brza i profesionalna usluga, sigurno ćemo ponovo sarađivati!\"",
-        author: "Jelena Nikolić"
-    },
-    {
-        img: "Images/Marija.jpg",
-        text: "\"Fantastičan tim i besprekoran kvalitet!\"",
-        author: "Marija Lazarević"
-    },
-    {
-        img: "Images/Dalibor.jpg",
-        text: "\"Fantastičan tim i besprekoran kvalitet!\"",
-        author: "Dalibor Jovanović"
-    }
-];
-
-let currentIndex = 0;
-
-function updateTestimonial() {
-    document.getElementById("profile-img").src = testimonials[currentIndex].img;
-    document.getElementById("testimonial-text").textContent = testimonials[currentIndex].text;
-    document.getElementById("testimonial-author").textContent = testimonials[currentIndex].author;
-}
-
-function prevTestimonial() {
-    currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
-    updateTestimonial();
-}
-
-function nextTestimonial() {
-    currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
-    updateTestimonial();
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    updateTestimonial();
-});
-
-document.getElementById("commentForm").addEventListener("submit", function (event) {
-event.preventDefault();     
-let message = document.getElementById("successMessage");
-    message.style.display = "block"; 
-
-    setTimeout(function () {
-      location.reload();
-    }, 5000);
-
-});
 
   </script>
 

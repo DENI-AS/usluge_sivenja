@@ -79,6 +79,48 @@
         </div>
       </nav>
     </header>
+
+    <section class="product-section">
+    <div class="shadows"></div>
+              
+
+    <div class="product-layout">
+
+      <aside class="product-filters">
+        <h3>Uzrast</h3>
+        <div class="filter-polje">
+          <input type="checkbox" class="age-filter" id="uzrast-deca" value="deca">
+          <label for="uzrast-deca">Deca</label>
+        </div>
+
+        <div class="filter-polje">
+          <input type="checkbox" class="age-filter" id="uzrast-odrasli" value="odrasli">
+          <label for="uzrast-odrasli">Odrasli</label>
+        </div>
+
+        <br><hr><br>
+
+        <h3>Vrsta proizvoda</h3>
+        <div class="filter-polje">
+          <input type="checkbox" class="type-filter" id="tip-prekrivac" value="prekrivac">
+          <label for="tip-prekrivac">Prekrivači</label>
+        </div>
+
+        <div class="filter-polje">
+          <input type="checkbox" class="type-filter" id="tip-jastucnica" value="jastucnica">
+          <label for="tip-jastucnica">Jastučnice</label>
+        </div>
+
+        <div class="filter-polje">
+          <input type="checkbox" class="type-filter" id="tip-gnezdo" value="gnezdo">
+          <label for="tip-gnezdo">Gnezda</label>
+        </div>
+
+      </aside>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
     
     </main>
 
@@ -199,9 +241,8 @@
     <div id="progress">
       <span id="progress-value"><i class="ri-arrow-up-s-line"></i></span>
     </div>
-    
-    <script src="scrollreveal.min.js"></script>
     <script src="main.js"></script>  
+    <script src="scrollreveal.min.js"></script>
     <script>
       if (document.referrer !== "" && window.location.href === "deni-as.com") {
           sessionStorage.setItem('previousPage', document.referrer);

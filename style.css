@@ -416,6 +416,10 @@ color: var(--title-color);
 }
 
 /*=============== ABOUT ===============*/
+.o-nama{
+background-color: var(--container-color);
+  
+}
 .about__container {
 row-gap: 4rem;
 }
@@ -826,7 +830,7 @@ color: var(--title-color);
 .service-section {
 min-height: 550px;
 width: 100%;
-background: var(--body-color);
+background-color: var(--container-color);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -847,6 +851,7 @@ text-transform: uppercase;
 }
 
 .home__cards {
+  
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 25px;
@@ -892,7 +897,6 @@ cursor: default;
 .home__card:after {
 content: "";
 display: inline-block;
-background: var(--body-color);
 width: 90%;
 height: 90%;
 padding: 3px;
@@ -934,6 +938,7 @@ font-size: 10rem;
 }
 
 .price-section {
+  background-color: var(--container-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1001,7 +1006,6 @@ font-size: 10rem;
 .left-details {
   text-align: left;
   white-space: nowrap;
-  /* Sprečava prelamanje teksta */
 }
 
 .dotted-line {
@@ -1015,6 +1019,136 @@ font-size: 10rem;
   white-space: nowrap;
 }
 /*------------------ RADOVI -----------------*/
+.product-section {
+  padding: 100px 20px 40px;
+  text-align: center;
+  background-color: var(--container-color);
+}
+
+.shadows{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(0deg, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) 100%);
+}
+
+.product-title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+}
+ 
+.product-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.product-filters {
+  position: sticky;
+  top: 120px;
+  text-align: start;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-right: 1px solid white;
+  height: fit-content;
+  min-width: 250px;
+}
+
+.product-filters h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.filter-polje input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.filter-polje label {
+  position: relative;
+  padding-left: 2em;
+  padding-right: 1em;
+  line-height: 2;
+  cursor: pointer;
+  display: inline-flex;
+  color: #ccc;
+}
+
+.filter-polje label:before {
+  box-sizing: border-box;
+  content: " ";
+  position: absolute;
+  top: 0.3em;
+  left: 0;
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border: 2px solid #9098A9;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.filter-polje input[type=checkbox]:checked+label {
+  padding-left: 1em;
+  color: #0f5229;
+}
+
+.filter-polje input[type=checkbox]:checked+label:before {
+  top: 0;
+  width: 100%;
+  height: 2em;
+  background: #b7e6c9;
+  border-color: #2cbc63;
+}
+
+.filter-polje label,
+.filter-polje label::before {
+  transition: 0.25s all ease;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  column-gap: 50px;
+  width: 100%;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 70%;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 16px;
+  margin-top: 15px;
+  color: white;
+  text-align: start;
+}
+
+.product-price {
+  text-align: start;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/**********************************************************/
+
 
 .work {
 height: 850px;
@@ -1187,7 +1321,7 @@ min-height: 200px;
 /*=============== FOOTER ===============*/
 .footer {
 padding-block: 2.5rem;
-background-color: var(--container-color);
+background-color: rgb(14 14 14);
 }
 
 .footer__content {
@@ -1498,6 +1632,7 @@ position: relative;
 
 .contact-right form {
 height: 90%;
+margin-top: 0px;
 }
 
 .contact__adr {
@@ -1625,6 +1760,7 @@ height: 80%;
 }
 
 .about__container {
+
 grid-template-rows: repeat(2, auto);
 align-items: center;
 }
@@ -1748,6 +1884,36 @@ min-height: 125px;
 grid-template-columns: 400px;
 justify-content: center;
 }
+
+.product-layout {
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-filters {
+  position: static;
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-title {
+  font-size: 22px;
+}
+
+.product-name {
+  font-size: 14px;
+}
+
+.product-price {
+  font-size: 13px;
+}
+
 .footer__data {
 grid-template-columns: repeat(3, auto);
 }
